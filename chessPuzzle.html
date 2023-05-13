@@ -1,0 +1,126 @@
+<!-- This is a little project i did for an university assignment -->
+<html>
+  <head>
+    <title>Morphy's Puzzle</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="chessPuzzle.css" />
+    <script type="text/javascript" src="chessPuzzle.js" defer></script>
+    <!-- <script type="text/javascript" src="chess.js"></script> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="descrizione">
+      <p class="titolo">Aufgabe 3</p>
+      <p class="sottotitolo">Gewinne in 2 Zügen</p>
+      <div class="risultato">
+        <p id="risultato"></p>
+        <button id="ricarica" onclick="ricarica()">Try again</button>
+        <button id="senzacattura" onclick="senzacattura()">
+          What if black didn't capture the rook?
+        </button>
+      </div>
+      <div class="istruzioni">
+        <p>Instructions:</p>
+        <ol type="1">
+          <li>click on the piece you'd like to move</li>
+          <li>choose the move you want to make</li>
+          <li>
+            if you make a mistake, the page will reload resetting the board
+          </li>
+        </ol>
+      </div>
+    </div>
+    <!--
+        Chess pieces in Unicode:
+        K B = &#9812;
+        Q B = &#9813;
+        R B = &#9814;
+        B B = &#9815;
+        Kn B = &#9816;
+        P B = &#9817;
+        K N = &#9818;
+        Q N = &#9819;
+        R N = &#9820;
+        B N = &#9821;
+        Kn N = &#9822;
+        P N = &#9823;
+    -->
+    <div class="chessboard">
+      <!-- Riga 8 -->
+      <div id="a8" class="white"></div>
+      <div id="b8" class="black"></div>
+      <div id="c8" class="white"></div>
+      <div id="d8" class="black"></div>
+      <div id="e8" class="white"></div>
+      <div id="f8" class="black"></div>
+      <div id="g8" class="white"></div>
+      <div id="h8" class="black"></div>
+      <!-- Riga 7 -->
+      <div id="a7" class="black"></div>
+      <div id="b7" class="white"></div>
+      <div id="c7" class="black"></div>
+      <div id="d7" class="white"></div>
+      <div id="e7" class="black"></div>
+      <div id="f7" class="white"></div>
+      <div id="g7" class="black"></div>
+      <div id="h7" class="white"></div>
+      <!-- Riga 6 -->
+      <div id="a6" class="white"></div>
+      <div id="b6" class="black"></div>
+      <div id="c6" class="white"></div>
+      <div id="d6" class="black"></div>
+      <div id="e6" class="white"></div>
+      <div id="f6" class="black"></div>
+      <div id="g6" class="white"></div>
+      <div id="h6" class="black"></div>
+      <!-- Riga 5 -->
+      <div id="a5" class="black"></div>
+      <div id="b5" class="white"></div>
+      <div id="c5" class="black"></div>
+      <div id="d5" class="white"></div>
+      <div id="e5" class="black"></div>
+      <div id="f5" class="white"></div>
+      <div id="g5" class="black"></div>
+      <div id="h5" class="white"></div>
+      <!-- Riga 4 -->
+      <div id="a4" class="white"></div>
+      <div id="a4" class="black"></div>
+      <div id="a4" class="white"></div>
+      <div id="a4" class="black"></div>
+      <div id="a4" class="white"></div>
+      <div id="a4" class="black"></div>
+      <div id="a4" class="white"></div>
+      <div id="a4" class="black"></div>
+      <!-- Riga 3 -->
+      <div id="a3" class="black"></div>
+      <div id="b3" class="white"></div>
+      <div id="c3" class="black"></div>
+      <div id="d3" class="white"></div>
+      <div id="e3" class="black"></div>
+      <div id="f3" class="white"></div>
+      <div id="g3" class="black"></div>
+      <div id="h3" class="white"></div>
+      <!-- Riga 2 -->
+      <div id="a2" class="white"></div>
+      <div id="b2" class="black"></div>
+      <div id="c2" class="white"></div>
+      <div id="d2" class="black"></div>
+      <div id="e2" class="white"></div>
+      <div id="f2" class="black"></div>
+      <div id="g2" class="white"></div>
+      <div id="h2" class="black"></div>
+      <!-- Riga 1 -->
+      <div id="a1" class="black"></div>
+      <div id="b1" class="white"></div>
+      <div id="c1" class="black"></div>
+      <div id="d1" class="white"></div>
+      <div id="e1" class="black"></div>
+      <div id="f1" class="white"></div>
+      <div id="g1" class="black"></div>
+      <div id="h1" class="white"></div>
+    </div>
+  </body>
+</html>

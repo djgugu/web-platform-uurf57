@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="page.js" defer></script>
+  </head>
+  <body style="background: black">
+    <svg id="svg" viewBox="0 0 500 600" width="100%" height="100%">
+      <defs>
+        <g class="combination-input-template">
+          <rect
+            x="-25"
+            y="-40"
+            width="50"
+            height="80"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            rx="3"
+          />
+          <text
+            class="text-value"
+            x="0"
+            y="13"
+            font-size="36"
+            fill="white"
+            text-anchor="middle"
+          >
+            0
+          </text>
+          <path d="M0 -32 l5 10 l-10 0 z" fill="white" />
+          <path d="M0 32 l5 -10 l-10 0 z" fill="white" />
+          <rect
+            class="up-button"
+            x="-25"
+            y="-40"
+            width="50"
+            height="40"
+            fill="transparent"
+          />
+          <rect
+            class="down-button"
+            x="-25"
+            y="0"
+            width="50"
+            height="40"
+            fill="transparent"
+          />
+        </g>
+      </defs>
+      <g id="padlock" transform="translate(250,220)">
+        <rect
+          id="box"
+          x="-60"
+          y="-45"
+          width="120"
+          height="90"
+          rx="5"
+          fill="hsl(120,50%,100%)"
+        />
+        <path
+          id="bar"
+          d="M-35 -45
+                 v-40
+                 c 0 -40, 70 -40, 70,0
+                 v80"
+          stroke-width="15"
+          stroke-linecap="round"
+          fill="none"
+          stroke="hsl(120,50%,100%)"
+        />
+      </g>
+      <g id="unlock-button" transform="translate(250,450)">
+        <text x="0" y="6" font-size="16" fill="white" text-anchor="middle">
+          unlock
+        </text>
+        <rect
+          x="-50"
+          y="-20"
+          width="100"
+          height="40"
+          fill="transparent"
+          stroke="white"
+          stroke-width="2"
+          rx="3"
+        />
+      </g>
+
+      <g
+        id="unlock-button"
+        transform="translate(250,450)"
+        onclick="javascript:document.location.href='index.html'"
+      >
+        <text x="0" y="50" font-size="16" fill="white" text-anchor="middle">
+          Zurück
+        </text>
+        <rect
+          x="-50"
+          y="30"
+          width="100"
+          height="40"
+          fill="transparent"
+          stroke="white"
+          stroke-width="2"
+          rx="3"
+        />
+      </g>
+
+      <text
+        id="response-text"
+        x="50%"
+        y="360"
+        font-size="50"
+        fill="white"
+        text-anchor="middle"
+        opacity="0"
+      >
+        correct
+      </text>
+      <g id="combination-input-container" transform="translate(250,365)"></g>
+    </svg>
+  </body>
+</html>

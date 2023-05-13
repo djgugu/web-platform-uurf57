@@ -1,0 +1,110 @@
+p,
+li {
+  font-family: 'Alfa Slab One', 'Roboto';
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+#ricarica {
+  display: none;
+}
+
+#senzacattura {
+  display: none;
+}
+
+#risultato {
+  display: none;
+}
+
+.risultato {
+  max-width: 400px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.risultato button {
+  text-align: center;
+}
+
+.risultato {
+  min-height: 130px;
+}
+
+.istruzioni {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.istruzioni p {
+  font-size: 25px;
+}
+
+.istruzioni li {
+  text-align: left;
+}
+
+.titolo {
+  font-style: bold;
+  font-size: 50px;
+}
+
+.sottotitolo {
+  font-size: 25px;
+}
+
+.descrizione {
+  float: left;
+  width: 45%;
+  margin: auto;
+}
+
+body {
+  background: rgb(45, 40, 42);
+  background: radial-gradient(
+    circle,
+    rgba(45, 40, 42, 1) 0%,
+    rgba(90, 113, 140, 1) 100%
+  );
+}
+
+.chessboard {
+  float: left;
+  width: 55%;
+  width: 640px;
+  height: 640px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 10px solid black;
+}
+.black {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: #999;
+  font-size: 50px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.white {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  font-size: 50px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.evidenziata {
+  box-sizing: border-box;
+  border: 5px solid red;
+}
